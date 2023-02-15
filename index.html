@@ -6,8 +6,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		ul>li {
-			list-style-type: "- "
+		table {
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+		}
+
+		th {
+			background-color: lightgray;
 		}
 
 	</style>
@@ -15,34 +26,44 @@
 </head>
 
 <body>
-	<h1>Lists</h1>
-	<ul>
-		<li>Lorem ipsum dolor sit.</li>
-		<li>Lorem ipsum dolor sit.</li>
-		<li>Lorem ipsum dolor sit.</li>
-		<li>Lorem ipsum dolor sit.</li>
-	</ul>
-	<ol>
-		<li>Lorem ipsum dolor sit amet.</li>
-		<li>Lorem ipsum dolor sit amet.</li>
-		<li>Lorem ipsum dolor sit amet.</li>
-		<li>Lorem ipsum dolor sit amet.</li>
-	</ol>
-	<dl>
-		<dt>Data Title</dt>
-		<dd>Data Definition</dd>
-		<dt>Silicon</dt>
-		<dd>Material that is used in electronic chips</dd>
-		<dt>Lithium</dt>
-		<dd>Material that is used in batteries</dd>
-		<dt>Root</dt>
-		<dd>
-			<dl>
-				<dt>FolderA</dt>
-				<dd>FolderB</dd>
-			</dl>
-		</dd>
-	</dl>
+	<h1>Tables</h1>
+	<caption>Example Table</caption>
+	<table>
+		<thead>
+			<tr>
+				<th>Col title 1</th>
+				<th>Col title 2</th>
+				<th>Col title 3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Cell Data 1</td>
+				<td>Cell Data 2</td>
+				<td>Cell Data 3</td>
+			</tr>
+			<tr>
+				<td>Cell Data 1</td>
+				<td>Cell Data 2</td>
+				<td>Cell Data 3</td>
+			</tr>
+			<tr>
+				<td>Cell Data 1</td>
+				<td>Cell Data 2</td>
+				<td>Cell Data 3</td>
+			</tr>
+			<tr>
+				<td>Cell Data 1</td>
+				<td>Cell Data 2</td>
+				<td>Cell Data 3</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<td>Sum</td>
+			<td>:</td>
+			<td>123</td>
+		</tfoot>
+	</table>
 </body>
 
 </html>

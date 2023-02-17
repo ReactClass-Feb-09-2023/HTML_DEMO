@@ -16,6 +16,10 @@
 			display: inline;
 		}
 
+		textarea {
+			resize: vertical;
+		}
+
 		/* input,
 		#user-height {
 			width: 150px;
@@ -26,63 +30,24 @@
 </head>
 
 <body>
-	<form action="#" method="post">
+	<form action="https://www.google.com" method="post">
 		<label for="city">Enter a city:</label>
-		<input type="text" id="city" name="city" autocomplete="on" list="cities">
-		<datalist id="cities">
-			<option value="New York">
-			<option value="Los Angeles">
-			<option value="Chicago">
-			<option value="Houston">
-			<option value="Phoenix">
-			<option value="Philadelphia">
-			<option value="San Antonio">
-			<option value="San Diego">
-			<option value="Dallas">
-			<option value="San Jose">
-		</datalist>
+		<select id="city" name="LOCATION">
+			<optgroup label="Ontario">
+				<option value="New York">New York</option>
+				<option value="Los Angeles">Los Angeles</option>
+				<option value="Chicago">Chicago</option>
+			</optgroup>
 
-		<label for="user-name">User Name</label>
-		<input id='user-name' type="text" maxlength="5">
-
-		<label for="user-portfolio">Portfolio URL</label>
-		<input id='user-portfolio' type="url" placeholder="https://www.google.com">
-
-		<label for="user-password">Password</label>
-		<input id='user-password' type="password">
-
-		<label for="user-cc">Credit Card</label>
-		<input id='user-cc' type="text" minlength="14" maxlength="17">
-
-		<input id='remember-me' type="checkbox">
-		<label for="remember-me">Remember me</label>
-
-		<p>Would you like to subscribe to the our newsletter?</p>
-		<input id='newsletter-yes' type="radio" name="newsletter-question">
-		<label for="newsletter-yes">Yes</label>
-		<input id='newsletter-no' type="radio" name="newsletter-question">
-		<label for="newsletter-no">No</label>
-
+			<optgroup label="Alberta">
+				<option value="Edmonton">Houston</option>
+				<option value="Calgary">Phoenix</option>
+				<option value="Toronto">Philadelphia</option>
+			</optgroup>
+		</select>
 		<br>
-		<label for="user-email">Email</label>
-		<input id='user-email' type="email" required disabled>
-
-		<br>
-		<label for="user-height">Height</label>
-		<input id='user-height' type="number" min="100" max="300" step="10" value='100' readonly>
-
-		<label for="user-dob">DoB</label>
-		<input id='user-dob' type="date">
-
-		<label for="user-preferred-call-time">Preferred Call Time</label>
-		<input id='user-preferred-call-time' type="time">
-
-		<label for="user-rating">How would you rate our service?</label>
-		<input id='user-rating' type="range">
-
-
-		<label for="medical-record">Please upload your medical report.</label>
-		<input id='medical-record' type="file">
+		<label for="message"></label>
+		<textarea name="message" id="message" cols="30" rows="10"></textarea>
 
 		<input type="reset" value="Reset">
 		<input type="submit" value="Submit">

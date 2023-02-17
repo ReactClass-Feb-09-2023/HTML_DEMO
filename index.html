@@ -5,24 +5,64 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		input {
+			display: block;
+			margin-bottom: 1rem;
+		}
+
+		[type='checkbox'],
+		[type='radio'] {
+			display: inline;
+		}
+
+	</style>
 	<title>Document</title>
 </head>
 
 <body>
-	<figure>
-		<img src="https://via.placeholder.com/200x150" alt="work table with coffee mug" title="working table"
-			loading="lazy">
-		<figcaption>This is a nice image</figcaption>
-	</figure>
-	<figure>
-		<blockquote>
-			<p>
-				Purity, peace, love, truth and happiness all lie inside us, ready to be rediscovered.
-			</p>
-		</blockquote>
-		<figcaption>By someone</figcaption>
-	</figure>
+	<form action="#" method="post">
 
+		<label for="user-name">User Name</label>
+		<input id='user-name' type="text">
+
+		<label for="user-email">Email</label>
+		<input id='user-email' type="email">
+
+		<label for="user-portfolio">Portfolio</label>
+		<input id='user-portfolio' type="url">
+
+		<label for="user-password">Password</label>
+		<input id='user-password' type="password">
+
+		<input id='remember-me' type="checkbox">
+		<label for="remember-me">Remember me</label>
+
+		<p>Would you like to subscribe to the our newsletter?</p>
+		<input id='newsletter-yes' type="radio" name="newsletter-question">
+		<label for="newsletter-yes">Yes</label>
+		<input id='newsletter-no' type="radio" name="newsletter-question">
+		<label for="newsletter-no">No</label>
+		<br>
+		<label for="user-height">Height</label>
+		<input id='user-height' type="number" min="100" max="300">
+
+		<label for="user-dob">DoB</label>
+		<input id='user-dob' type="date">
+
+		<label for="user-preferred-call-time">Preferred Call Time</label>
+		<input id='user-preferred-call-time' type="time">
+
+		<label for="user-rating">How would you rate our service?</label>
+		<input id='user-rating' type="range" min="0" max="5">
+
+
+		<label for="medical-record">Please upload your medical report.</label>
+		<input id='medical-record' type="file">
+
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit">
+	</form>
 </body>
 
 </html>

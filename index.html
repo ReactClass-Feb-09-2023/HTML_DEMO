@@ -31,23 +31,18 @@
 
 <body>
 	<form action="https://www.google.com" method="post">
-		<label for="city">Enter a city:</label>
-		<select id="city" name="LOCATION">
-			<optgroup label="Ontario">
-				<option value="New York">New York</option>
-				<option value="Los Angeles">Los Angeles</option>
-				<option value="Chicago">Chicago</option>
-			</optgroup>
-
-			<optgroup label="Alberta">
-				<option value="Edmonton">Houston</option>
-				<option value="Calgary">Phoenix</option>
-				<option value="Toronto">Philadelphia</option>
-			</optgroup>
-		</select>
-		<br>
-		<label for="message"></label>
-		<textarea name="message" id="message" cols="30" rows="10"></textarea>
+		<fieldset>
+			<legend>User Information</legend>
+			<label for=""><input type="text"></label>
+			<label for=""><input type="text"></label>
+			<label for=""><input type="text"></label>
+		</fieldset>
+		<fieldset>
+			<legend>Car Information</legend>
+			<label for=""><input type="text"></label>
+			<label for=""><input type="text"></label>
+			<label for=""><input type="text"></label>
+		</fieldset>
 
 		<input type="reset" value="Reset">
 		<input type="submit" value="Submit">
